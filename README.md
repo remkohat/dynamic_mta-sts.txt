@@ -63,7 +63,7 @@ Mail servers that support MTA-STS will send messages to your domain only over co
 
 - Enable securitytxt.conf in Apache
 
-  ```a2enconf securitytxt```
+  ```a2enconf mta-sts```
 
 - Reload Apache
 
