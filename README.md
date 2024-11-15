@@ -41,6 +41,12 @@ Mail servers that support MTA-STS will send messages to your domain only over co
 
   <sup>(for any other location you need to alter apache.conf or nginx.conf)</sup>
 
+### Edit "mode" and "max_age" fields in /var/www/mta-sts/conf/[config.php](mta-sts/conf/config.php) if desired
+
+- Default values set:
+  - mode: enforce
+  - max_age: 7776000 (90 days)
+
 ### Enable webserver configuration
 
 #### _Apache_
