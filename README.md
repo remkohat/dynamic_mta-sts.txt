@@ -53,11 +53,11 @@ Mail servers that support MTA-STS will send messages to your domain only over co
 
 - Copy /var/www/mta-sts/conf/[apache.conf](mta-sts/conf/apache.conf) to /etc/apache2/conf-available/mta-sts.conf
   
-  ```cp /var/www/securitytxt/conf/apache.conf /etc/apache2/conf-available/securitytxt.conf```
+  ```cp /var/www/mta-sts/conf/apache.conf /etc/apache2/conf-available/mta-sts.conf```
 
   Or create a symlink in /etc/apache2/conf-available
   
-  ```ln -s /var/www/securitytxt/conf/apache.conf /etc/apache2/conf-available/securitytxt.conf```
+  ```ln -s /var/www/mta-sts/conf/apache.conf /etc/apache2/conf-available/mta-sts.conf```
 
 - Check PHP handler and change if necessary
 
