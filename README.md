@@ -103,6 +103,15 @@ Mail servers that support MTA-STS will send messages to your domain only over co
 
   ```include /etc/nginx/snippets/mta-sts.conf;```
 
+## _Important note!_
+
+There needs to be a corresponding TXT record in your DNS:
+
+```
+Name:				Type:	TTL:	Value:
+_mta-sts.<(sub.)domain.tld>.	TXT	<TTL>	v=STSv1; id=<id>
+```
+
 ## _Example output_
 
 ```
