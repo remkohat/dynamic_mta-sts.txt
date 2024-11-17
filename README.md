@@ -112,6 +112,8 @@ Name:				Type:	TTL:	Value:
 _mta-sts.<(sub.)domain.tld>.	TXT	<TTL>	v=STSv1; id=<id>
 ```
 
+And when your MX records are changed you need to update the id!
+
 ## _Example output_
 
 ```
