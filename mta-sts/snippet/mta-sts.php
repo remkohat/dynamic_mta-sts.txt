@@ -8,7 +8,7 @@ $weight = "";
 
 $domain = preg_replace("~^mta-sts\.~", "", $_SERVER['HTTP_HOST']);
 
-if (str_starts_with($host, "mta-sts.")) {
+if (str_starts_with($_SERVER['HTTP_HOST'], "mta-sts.")) {
 	if (checkdnsrr("_mta-sts.".$domain, "TXT")) {
 		if ($mode == "enforce" || $mode == "testing") {
 			if (dns_get_mx($domain, $mxhosts, $weight)) {
